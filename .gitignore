@@ -1,0 +1,22 @@
+# Archivos de Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Autenticación de WhatsApp Web
+.wwebjs_auth/
+
+# Archivos temporales
+*.log
+*.bak
+
+# Documentos recibidos
+documentos_recibidos/
