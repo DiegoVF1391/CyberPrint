@@ -29,7 +29,16 @@ client.on('message', async message => {
 
     if (message.hasMedia) {
         const media = await message.downloadMedia();
-        const ext = media.mimetype.split("/")[1] || "bin";
+        
+        const mime = media.mimetype;
+
+        if (!["application/pdf", "image/jpeg", "image/png"].includes(mime)) {
+            console.log(`❌ Tipo de archivo no permitido: ${mime}`);
+            return;
+        }
+
+        const ext = mime.split("/")[1];
+        
         const nombreArchivo = `documento_${Date.now()}.${ext}`;
         const ruta = path.join(__dirname, 'documentos_recibidos', nombreArchivo);
 
