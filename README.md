@@ -27,5 +27,5 @@ Sistema automatizado para recibir documentos vía WhatsApp y enviarlos a impresi
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/TU_USUARIO/CyberPrint.git
+git https://github.com/DiegoVF1391/CyberPrint.git
 cd CyberPrint
