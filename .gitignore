@@ -13,6 +13,7 @@ Thumbs.db
 
 # Autenticación de WhatsApp Web
 .wwebjs_auth/
+.wwebjs_cache/
 
 # Archivos temporales
 *.log
